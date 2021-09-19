@@ -1,0 +1,29 @@
+<launch>
+    <node pkg="hg_obstacle_detection" type="velodyne_parking" name="velodyne_parking" output="screen"/>
+    <!-- <node pkg="hg_obstacle_detection" type="velodyne_zone" name="velodyne_zone" output="screen"/> -->
+    <node pkg="hg_obstacle_detection" type="velodyne_zone" name="velodyne_zone" />
+    <node pkg="rviz" type="rviz" name="rviz_3" output="screen" args = "-d $(find hg_obstacle_detection)/rviz/velo.rviz"/>
+
+    <param name="minX" type="double" value="0.0"/>
+    <param name="minY" type="double" value="-5.0"/>
+    <param name="minZ" type="double" value="-1.5"/>
+
+    <param name="maxX" type="double" value="10.0"/>
+    <param name="maxY" type="double" value="0.0"/>
+    <param name="maxZ" type="double" value="0.8"/>
+
+
+<!-- 14 -->
+<!-- 23 -->
+
+    <param name="x1" type="double" value="3.0"/>
+    <param name="x2" type="double" value="1.0"/>
+    <param name="x3" type="double" value="1.0"/>
+    <param name="x4" type="double" value="3.0"/>
+
+    <param name="y1" type="double" value="-1.0"/>
+    <param name="y2" type="double" value="-1.0"/>
+    <param name="y3" type="double" value="-2.0"/>
+    <param name="y4" type="double" value="-2.0"/>
+
+</launch>
