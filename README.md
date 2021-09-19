@@ -6,6 +6,7 @@ common functions and tool for develop
 
 obstacle detector
 
+command
 '''
-
+roslaunch hg_obstacle_detector velodyne_filter.launch
 '''
